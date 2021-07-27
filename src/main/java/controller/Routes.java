@@ -2,12 +2,12 @@ package controller;
 
 public class Routes {
 
-    @WebRoute(path = "/home")
+    @WebRoute(method = WebRoute.Method.POST, path = "/home")
     public String routeOne() {
         return "one";
     }
 
-    @WebRoute(path = "/sign-in")
+    @WebRoute(method = WebRoute.Method.GET, path = "/sign-in")
     public String routeTwo() {
         return "two";
     }

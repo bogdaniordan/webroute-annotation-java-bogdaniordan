@@ -14,7 +14,7 @@ import com.sun.net.httpserver.HttpServer;
 import controller.Routes;
 import controller.WebRoute;
 
-public class Test {
+public class Main {
     private static final HashMap<String, Method> pathToMethods = new HashMap<>();
     private static final Routes ROUTES = new Routes();
 

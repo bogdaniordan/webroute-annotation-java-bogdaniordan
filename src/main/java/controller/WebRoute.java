@@ -9,4 +9,13 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface WebRoute {
     String path() default "";
+    Method method() default Method.GET;
+
+    enum Method {
+        GET, POST;
+
+        public boolean equals(String otherMethod) {
+            return this.name().equalsIgnoreCase(otherMethod);
+        }
+    }
 }
